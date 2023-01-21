@@ -8,8 +8,7 @@ so to download this script in a zip file on github(counts for all scripts) click
 # Installation
 So now u have it in ur file explorer and right click the file and unzip (extract all) all and you will see 4 things.
 
-The first thing is a "resources" folder you open it just open the stands folder with the stand launchpad with the button and click on the lua Scripts folder.
-Then look for the "resources" folder and you dont have it make one and put the NovaMeter folder in there.
+you take the first folder called "resources" and paste that into the lua scripts folder you open the lua scripts folder with the stand luanchpad by clicking open stand folder and then you will need to click on Lua Scripts u paste my resources folder in there.
 
 Next thing is the NovaMeter.lua file copy that and paste it into the Lua Scripts folder.
 
