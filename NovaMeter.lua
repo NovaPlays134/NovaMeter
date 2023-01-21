@@ -1,6 +1,6 @@
 --NovaMeter by Nova_Plays my discord is Nova_Plays#9126
 --if you have problems or new ideas be free to dm me or ping me in the discord server i own
---have fun
+--have fu
 util.keep_running()
 util.require_natives(1651208000)
 
