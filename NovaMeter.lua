@@ -41,35 +41,35 @@ local auto_update_config = {
         {
             name="NovaMeterLogo",
             source_url="https://raw.githubusercontent.com/NovaPlays134/NovaMeter/main/resources/NovaMeter/NovaMeterLogo.png",
-            script_relpath="lib/constructor/constructor_logo.png",
+            script_relpath="resources/NovaMeter/NovaMeterLogo.png",
             check_interval=default_check_interval,
         },
 
 		{
             name="background",
             source_url="https://raw.githubusercontent.com/NovaPlays134/NovaMeter/main/resources/NovaMeter/background.png",
-            script_relpath="lib/constructor/constructor_logo.png",
+            script_relpath="resources/NovaMeter/background.png",
             check_interval=default_check_interval,
         },
 
 		{
             name="meterline",
             source_url="https://raw.githubusercontent.com/NovaPlays134/NovaMeter/main/resources/NovaMeter/meterline.png",
-            script_relpath="lib/constructor/constructor_logo.png",
+            script_relpath="resources/NovaMeter/meterline.png",
             check_interval=default_check_interval,
         },
 
 		{
             name="meterline2",
             source_url="https://raw.githubusercontent.com/NovaPlays134/NovaMeter/main/resources/NovaMeter/meterline2.png",
-            script_relpath="lib/constructor/constructor_logo.png",
+            script_relpath="resources/NovaMeter/meterline2.png",
             check_interval=default_check_interval,
         },
 
 		{
             name="pin",
             source_url="https://raw.githubusercontent.com/NovaPlays134/NovaMeter/main/resources/NovaMeter/pin.png",
-            script_relpath="lib/constructor/constructor_logo.png",
+            script_relpath="resources/NovaMeter/pin.png",
             check_interval=default_check_interval,
 		}
     }
@@ -85,7 +85,7 @@ local speedometer = directx.create_texture(resources_dir .. "meterline.png")
 local speedometer2 = directx.create_texture(resources_dir .. "meterline2.png")
 local speedometerpin = directx.create_texture(resources_dir .. "pin.png")
 local background = directx.create_texture(resources_dir .. "background.png")
-local logo = directx.create_texture(resources_dir .. "NovaMeter logo.png")
+local logo = directx.create_texture(resources_dir .. "NovaMeterLogo.png")
 ----------
 --COLORS--
 ----------
@@ -192,7 +192,7 @@ end)
 menu.action(menu.my_root(), "Check for Update", {}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
     if auto_updater.run_auto_update(auto_update_config) then
-        util.toast(t("No updates found"))
+        util.toast("No updates found")
     end
 end)
 menu.action(menu.my_root(), "Clean Reinstall", {}, "Force an update to the latest version, regardless of current version.", function()
