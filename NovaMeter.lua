@@ -178,12 +178,12 @@ end)
 
 --position--
 local txtposX = 0.913
-menu.slider(position_list, "Speedometer pos X", {}, "Default value is 913", 1, 1000, speedometer_posX * 1000, 1, function(x)
+menu.slider(position_list, "Speedometer pos X", {"novameterspeedoposx"}, "Default value is 913", 1, 1000, speedometer_posX * 1000, 1, function(x)
 	speedometer_posX = x / 1000
 	txtposX = x / 1000
 end)
 
-menu.slider(position_list, "Speedometer pos Y", {}, "Default value is 888", 1, 1000, speedometer_posY * 1000, 1, function(y)
+menu.slider(position_list, "Speedometer pos Y", {"novameterspeedoposy"}, "Default value is 888", 1, 1000, speedometer_posY * 1000, 1, function(y)
 	speedometer_posY = y / 1000
 	txt_posY = y / 1000 + 0.050
 	txt2_posY = y / 1000 + 0.064
